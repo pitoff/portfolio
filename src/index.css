@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #38446E;
+  background-color: rgb(221, 209, 209);
+}
+
+.bg-services{
+  background-image: url('./assets/stacks.png');
+}
+
+.bg-about{
+  background-image: url('./assets/about.png');
+}
+
+.btn {
+    background-color: #38446E;
+    box-shadow: 0px 4.42184px 107.23px rgba(58, 113, 230, 0.51);
+  }
+  
+  .btn:hover {
+    color: rgb(226, 114, 114)
+  }
+
+.gradient,
+.active {
+  color: rgb(226, 114, 114);
+  padding: 1rem;
+  border-radius: 100%;
+}
+.myName {
+  color: #38446E;
+  text-transform: uppercase;
+  font-family:'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+@layer base {
+    body {
+        @apply text-lg leading-8;
+      }
+      .h2 {
+        @apply text-[32px] mb-4 tracking-[10%] uppercase;
+      }
+      .h3 {
+        @apply font-semibold text-[26px] mb-6 leading-[46px];
+      }
+      .btn {
+        @apply rounded-full text-white font-medium;
+      }
+      .btn-sm {
+        @apply h-[48px] px-6 text-sm;
+      }
+      .btn-lg {
+        @apply h-[56px] px-10 text-base;
+      }
+      .btn-link {
+        @apply text-base;
+      }
+      .text-gradient {
+        @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold hover:from-[#FF56F6] hover:to-[#42A6E3];
+      }
+      .section{
+          @apply py-8 lg:py-24 lg:h-screen flex items-center;
+      }
+}

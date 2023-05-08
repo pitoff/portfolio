@@ -20,7 +20,7 @@ const Banner = () => {
                   duration: "2",
                   delay: "0.5"
               }}
-              className='myName text-[55px] font-bold leading-[0.8] lg:text-[70px]'
+              className='myName text-[55px] font-bold leading-[0.8] lg:text-[50px]'
             >
               Peter <span>Offodile</span>
             </motion.h1>
@@ -63,7 +63,7 @@ const Banner = () => {
               viewport={{once:false, amount:0.7}}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
-              <button className='btn btn-lg'>Contact me</button>
+              <button className='btn btn-lg hover:text-gradient myFooter'>Hire me</button>
               <a href="#" className='text-gradient btn-link'>
                 My portfolio
               </a>

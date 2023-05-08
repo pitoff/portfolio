@@ -7,21 +7,21 @@ import stacks from '../assets/stacks.png'
 const services = [
   {
     name: 'Laravel/PHP',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: 'Learn More'
+    description: "Laravel is a php framework for developing fullstack applications and also API's efficient in developing large scale applications.",
+    link: "https://laravel.com/"
   },
   {
     name: 'NodeJs',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: 'Learn More'
+    description: '',
+    link: "https://nodejs.dev/en/about/"
   },
   {
     name: 'ReactJs',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: 'Learn More'
+    description: '',
+    link: "https://react.dev/learn"
   },
   {
-    name: 'AWS & CICD',
+    name: 'Github, CICD, AWS',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     link: 'Learn More'
   }
@@ -42,7 +42,7 @@ const Services = () => {
           >
             <h2 className='h2 text-accent mb-6 font-sans'>My Stacks</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
-              I have Worked with and proficient with these stacks for 3 years +
+              These are my stack proficiency
             </h3>
             
           </motion.div>
@@ -67,7 +67,7 @@ const Services = () => {
                     <a href="#" className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
                       <BsArrowUpRight />
                     </a>
-                    <a href="#" className='text-gradient text-sm'>{link}</a>
+                    <a href={link} className='text-gradient text-sm'>Learn More</a>
                   </div>
                 </div>
               })}

@@ -12,11 +12,11 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <div className='relative min-h-[100%]'>
+    <div className='min-h-full'>
       <BrowserRouter>
         <Header />
         {/* <NavBar /> */}
-        <Footer />
+        
         <Routes>
             <Route exact path='/' element={<Banner />}/>
             <Route path='/about' element={<About />}/>
@@ -24,12 +24,7 @@ function App() {
             <Route path='/contact' element={<Contact />}/>
         </Routes>
       </BrowserRouter>
-      
-      {/* <NavBar />
-      <About />
-      <Services />
-      <Works />
-      <Contact /> */}
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -4,7 +4,7 @@ const Footer = () => {
   const date = new Date().getFullYear()
   
   return (
-    <div className='myFooter absolute bottom-2 w-full'>
+    <div className='myFooter bottom-0 w-full'>
 
         <div className="flex flex-col-reverse md:flex-row justify-between p-2">
             <div className="md:w-1/2 font-bold flex justify-center text-white" style={{background:''}}>

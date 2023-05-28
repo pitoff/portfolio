@@ -24,7 +24,18 @@ const services = [
     name: 'Github, CICD, AWS',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     link: 'Learn More'
+  },
+  {
+    name: 'Github, CICD, AWS',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    link: 'Learn More'
+  },
+  {
+    name: 'Github, CICD, AWS',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    link: 'Learn More'
   }
+
 ]
 
 const Services = () => {

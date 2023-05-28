@@ -27,6 +27,10 @@ body {
   .myFooter{
     background-image: linear-gradient(to right,#42A6E3, #38446E);
   }
+  .myNav{
+    background-image: linear-gradient(to right,#42A6E3, #485790);
+    opacity: 0.96;
+  }
 
 .gradient,
 .active {
@@ -113,6 +117,6 @@ body {
         @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold hover:from-[#FF56F6] hover:to-[#42A6E3];
       }
       .section{
-          @apply py-8 lg:py-24 lg:h-screen flex items-center;
+          @apply py-2 lg:py-8 lg:h-screen flex items-center;
       }
 }

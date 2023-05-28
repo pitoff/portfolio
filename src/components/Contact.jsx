@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variant'
 import emailjs from '@emailjs/browser'
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const form = useRef();
@@ -11,9 +12,12 @@ const Contact = () => {
     
     emailjs.sendForm(`${import.meta.env.VITE_SERVICE_ID}`, `${import.meta.env.VITE_TEMPLATE_ID}`, form.current, `${import.meta.env.VITE_PUBLIC_KEY}`)
       .then((result) => {
+        toast.success("Contact message successfully sent")
+        form.current.reset();
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
+        toast.error(error.text)
       });
   }
 

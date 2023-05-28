@@ -8,6 +8,8 @@ import NavBar from './components/NavBar'
 import Services from './components/Services'
 import Works from './components/Works'
 import Footer from './components/Footer'
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -23,6 +25,7 @@ function App() {
             <Route path='/portfolio' element={<Works />}/>
             <Route path='/contact' element={<Contact />}/>
         </Routes>
+        <ToastContainer position="top-center"/>
       </BrowserRouter>
       {/* <Footer /> */}
     </div>

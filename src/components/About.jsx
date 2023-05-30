@@ -28,7 +28,7 @@ const About = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{once:false, amount:0.3}}
-            className='flex-1 text-xl'
+            className='flex-1 text-xl p-1'
             style={{fontFamily:`Arial`}}
           >
             <h2 className='h2 text-accent text-gradient'>About me.</h2>
